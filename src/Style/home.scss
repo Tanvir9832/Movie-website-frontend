@@ -1,0 +1,99 @@
+
+$bg: rgb(0,0,0);
+
+
+.banner{
+    height: 400px;
+    background-color: $bg;
+    position: relative;
+    z-index: -10;
+    >img{
+        height: 150%;
+        max-width: 100%;
+        width: 100%;
+        opacity: 0.7;
+        position: relative;
+        z-index: -5;
+    }
+    .heading{
+        position: absolute;
+        z-index: 1;
+        color: white;
+        margin-top: 80px;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        span{
+            opacity: 0.8;
+        }
+        .icons{
+            display: flex;
+            gap: 20px;
+            .play,.list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+                padding: 0.9rem;
+                border: none;
+
+            }
+            .list{
+                background: rgb(48, 46, 46);
+                color: white;
+
+            }
+        }
+
+    }
+}
+
+
+
+
+
+
+.row{
+    background: $bg;
+    >h2{
+        background: $bg;
+        color: aqua;
+        margin-left: 2rem;
+        padding-top: 1rem;
+    }
+    >div{
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 1rem;
+    }
+
+}
+
+.card{
+    width: 200px;
+    cursor: pointer;
+    margin: 1rem;
+    &:hover{
+        transform: translateY(-10px) translateX(10px) scale(1.01) ;
+        transition: 0.3s all linear;
+    }
+}
+
+.genre{
+display: flex;
+overflow-x: auto;
+background: $bg;
+color: white;
+padding: 1rem;
+
+    .genre__element{
+    padding: 1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0.5rem;
+    scroll-behavior:auto;
+}
+
+}
